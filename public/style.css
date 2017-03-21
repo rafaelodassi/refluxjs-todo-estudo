@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/bg02.jpg) center center;
+}
+
+.container {
+    color: #fff;
+}
+
+.card {
+    color: #000;
+}
+
+.nav-menu {
+    background-color: #263238;
+}
+
+.nav-bread {
+    background-color: #37474f;
+}
+
+#games-component .btn-new-game {
+    margin-bottom: 10px;
+    background-color: #37474f;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #37474f;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #90a4ae;
+}
