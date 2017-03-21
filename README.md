@@ -1,4 +1,4 @@
-Desafio Front-end
+Estudo RefluxJS - Todo
 =========================
 
 ## Pré-requisitos	
