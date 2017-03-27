@@ -1,4 +1,5 @@
 import Reflux from 'reflux';
+import ReactjsUtils from 'reactjs-utils';
 import ActionsGames from './actionsGames.jsx';
 
 class StoreGames extends Reflux.Store
@@ -13,16 +14,8 @@ class StoreGames extends Reflux.Store
 	onAddGame () {								
 		const copyGames = this.state.games;
 
-		const guid = function () {
-			function s4() {
-				return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-			}
-
-			return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-		};		
-
 		copyGames.push({
-			id: guid(),
+			id: ReactjsUtils.generateGuid(),
 			title: this.state.currentGame.title,
 			desc: this.state.currentGame.desc
 		});
